@@ -1,122 +1,150 @@
 body {
-    font-family: Arial;
-    background-color: rgb(127, 187, 187);
-    padding: 40px 0;
+  font-family: Arial;
+  background-color: rgb(127, 187, 187);
+  padding: 20px 0;
 }
 
 h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 h3 {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
-span {
-    color:rgb(28, 28, 60);
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
 .container {
-    box-shadow: 0 0 20px grey;
-    width: 960px;
-    margin: 0 auto;
-    background-color: white;
-}   
+  box-shadow: 0 0 20px grey;
+  width: 960px;
+  margin: 0 auto;
+  background-color: white;
+}
 
 section,
 header {
-    padding: 10px 60px 20px 60px; 
+  padding: 10px 60px 20px 60px;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
 }
 
 header ul {
-    list-style: none;
+  list-style: none;
 }
 
 li {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .address-icon {
-    width: 16px;
-    height: 16px;
-    background-color: rgb(50, 99, 100);
-    margin-right: 10px;
-    padding: 8px;
-    vertical-align: middle;
-    border-radius: 50%;
-    box-shadow: 0 0 10px grey;
+  width: 16px;
+  height: 16px;
+  background-color: rgb(50, 99, 100);
+  margin-right: 10px;
+  padding: 8px;
+  vertical-align: middle;
+  border-radius: 50%;
+  box-shadow: 0 0 10px grey;
 }
 
 .circle {
-    border-radius: 50%;
+  border-radius: 9999999999px;
 }
 
 .profile-picture {
-    width: 180px;
-    height: 180px;
+  width: 300px;
+  height: 300px;
+}
+
+.name {
+  margin-left: 10px;
+}
+
+.languages {
+  padding: 10px;
+}
+
+.skills-languages-hobbies {
+  width: 30%; /* Lub dostosuj szerokość według własnych preferencji */
+  box-sizing: border-box;
+}
+
+/* Dodatkowe stylowanie, jeśli potrzebujesz */
+
+.skills-languages-hobbies {
+  background-color: lightblue; /* Dodatkowe style dla lepszej widoczności */
+  padding: 10px;
+}
+
+.main-informations {
+  background-color: lightgreen; /* Dodatkowe style dla lepszej widoczności */
+  padding: 10px;
+  width: 70%;
+  box-sizing: border-box;
 }
 
 .hobbies {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .hobbies li {
-    width: 50%;
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 40px;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .hobbies div {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .hobbies p {
-    color: grey;
+  color: grey;
 }
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .cv-download-link {
-    border: 2px solid rgb(50, 99, 100);
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 20px;
-    border-radius: 26px;
-    transition: background-color 0.7s, color 0.7s;
-    box-shadow: 0 0 20px grey;
+  border: 2px solid rgb(50, 99, 100);
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 26px;
+  transition: background-color 0.7s, color 0.7s;
+  box-shadow: 0 0 20px grey;
 }
 
 .cv-download-link:hover {
-    color: white;
-    background-color: rgb(50, 99, 100);
+  color: white;
+  background-color: rgb(50, 99, 100);
 }
 
 .cv-download-link:focus {
-    outline: none;
-    color: white;
-    background-color: rgb(50, 99, 100);
+  outline: none;
+  color: white;
+  background-color: rgb(50, 99, 100);
 }
 
 .cv-download-link:active {
-    text-decoration: underline;
+  text-decoration: underline;
 }

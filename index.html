@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Błażej Bartoszewski CV</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
   </head>
   <body>
     <div class="container">
@@ -12,15 +16,14 @@
           alt="images-Błażej-Bartoszewski"
           src="./images/IMG_7895.JPG"
         />
-        <div>
-          <h1>Błażej Bartoszewskiiiiiii</h1>
-          <span>Zawód który obecnie wykonuję</span>
+        <div class="name">
+          <h1>Błażej Bartoszewski</h1>
+          <p>
+            Inspektor w Okręgowym Urzędzie Miar we Wrocławiu <br />
+            Wydziale Zamiejscowym w Opolu
+          </p>
           <div>
-            <a
-              class="cv-download-link"
-              href="https://store3.gofile.io/download/c0272294-2404-4c0d-919d-5604ffa3cdab/CV_wersja_PDF.pdf"
-              >Pobierz CV</a
-            >
+            <a class="cv-download-link" href="#">Pobierz CV</a>
           </div>
         </div>
         <address>
@@ -53,78 +56,54 @@
         </address>
       </header>
       <main>
-        <section>
-          <h2>O mnie</h2>
-          <p>
-            Tutaj będzie napisana notatka o mnie, <b>jak się nazywam</b>
-            ile mam lat, co lubię robić, moje cechy charakteru.
-          </p>
-        </section>
-        <section>
-          <h2>Doświadczenie zawodowe</h2>
-          <ul>
-            <li>2017-obecnie: "Firma" i "Stanowisko"</li>
-            <li>2015-2017: "Firma" i "Stanowisko"</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Języki</h2>
-          <ul>
-            <li>język angielki: średnio zaawansowany</li>
+        <section class="skills-languages-hobbies">
+          <h3>Umiejętności twarde</h3>
+          <h3>Umiejętności miękkie</h3>
+          <h3>Języki</h3>
+          <ul class="languages">
+            <li>język angielski: średnio zaawansowany</li>
             <li>język niemiecki: podstawowy</li>
           </ul>
+          <h3>Zainteresowania</h3>
         </section>
-        <section>
-          <h2>Wykształcenie</h2>
-          <ul>
-            <li>
-              data studiowania:
-              <a href="https://www.uni.opole.pl/">"Uczelnia"</a>, "kierunek"
-            </li>
-            <li>
-              data studiowania: <a href="https://pans.nysa.pl/">"Uczelnia"</a>,
-              "kierunek"
-            </li>
-            <li>
-              data studiowania:
-              <a href="https://zslt.klucznet.pl/">"Uczelnia"</a>, "kierunek"
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2>Zainteresowania</h2>
-          <ul class="hobbies">
-            <li>
-              <img src="images/motorbike.png" />
-              <div>
-                <h3>Motocykle: "chopper"</h3>
-                <p>Krótki opis...</p>
-              </div>
-            </li>
-            <li>
-              <img src="images/bike.png" />
-              <div>
-                <h3>Jazda na rowerze "gravel"</h3>
-                <p>Krótki opis...</p>
-              </div>
-            </li>
-            <li>
-              <img src="images/board game.png" />
-              <div>
-                <h3>Gry planszowe</h3>
-                <p>Krótki opis...</p>
-              </div>
-            </li>
-            <li>
-              <img src="images/volleyball.png" />
-              <div>
-                <h3>Sporty drużynowe: Piłka siatkowa</h3>
-                <p>Krótki opis...</p>
-              </div>
-            </li>
-          </ul>
-        </section>
+        <div class="main-informations">
+          <section class="about-me">
+            <h2>O mnie</h2>
+            <p>
+              Tutaj będzie napisana notatka o mnie, <b>jak się nazywam</b>
+              ile mam lat, co lubię robić, moje cechy charakteru.
+            </p>
+          </section>
+          <section>
+            <h2>Doświadczenie zawodowe</h2>
+            <ul>
+              <li>2017-obecnie: "Firma" i "Stanowisko"</li>
+              <li>2015-2017: "Firma" i "Stanowisko"</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Wykształcenie</h2>
+            <ul>
+              <li>
+                data studiowania:
+                <a href="https://www.uni.opole.pl/">"Uczelnia"</a>, "kierunek"
+              </li>
+              <li>
+                data studiowania:
+                <a href="https://pans.nysa.pl/">"Uczelnia"</a>, "kierunek"
+              </li>
+              <li>
+                data studiowania:
+                <a href="https://zslt.klucznet.pl/">"Uczelnia"</a>, "kierunek"
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Kursy i Certyfikaty</h2>
+          </section>
+        </div>
       </main>
     </div>
+    <script src="script.js" defer></script>
   </body>
 </html>
