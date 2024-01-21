@@ -4,19 +4,6 @@ body {
   padding: 20px 0;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 28px;
-}
-
-h3 {
-  margin-top: 5px;
-}
-
 main {
   display: flex;
   justify-content: space-between;
@@ -24,21 +11,21 @@ main {
 }
 .container {
   box-shadow: 0 0 20px grey;
-  width: 960px;
+  width: 21cm; /* szerokość A4 w centymetrach */
+  height: 29.7cm; /* wysokość A4 w centymetrach */
   margin: 0 auto;
   background-color: white;
 }
 
 section,
 header {
-  padding: 10px 60px 20px 60px;
+  padding: 10px 20px 20px 20px;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 60px;
 }
 
 header ul {
@@ -65,8 +52,8 @@ li {
 }
 
 .profile-picture {
-  width: 300px;
-  height: 300px;
+  width: 180px;
+  height: 180px;
 }
 
 .name {
@@ -94,6 +81,17 @@ li {
   padding: 10px;
   width: 70%;
   box-sizing: border-box;
+}
+
+.about-me-title {
+  padding: 0px;
+  margin: 0px;
+}
+
+.about-me-text {
+  font-size: small;
+  text-align: justify;
+  font-style: italic;
 }
 
 .hobbies {
