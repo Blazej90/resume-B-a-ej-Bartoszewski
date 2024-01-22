@@ -33,7 +33,11 @@ header ul {
 }
 
 li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+li {
+  font-size: small;
 }
 
 .address-icon {
@@ -60,6 +64,10 @@ li {
   margin-left: 10px;
 }
 
+.job {
+  font-size: small;
+}
+
 .languages {
   padding: 10px;
 }
@@ -72,12 +80,11 @@ li {
 /* Dodatkowe stylowanie, jeśli potrzebujesz */
 
 .skills-languages-hobbies {
-  background-color: lightblue; /* Dodatkowe style dla lepszej widoczności */
+  background-color: rgb(70, 141, 142);
   padding: 10px;
 }
 
 .main-informations {
-  background-color: lightgreen; /* Dodatkowe style dla lepszej widoczności */
   padding: 10px;
   width: 70%;
   box-sizing: border-box;
@@ -94,30 +101,15 @@ li {
   font-style: italic;
 }
 
-.hobbies {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+.work-experience {
+  max-width: max-content;
 }
 
-.hobbies li {
-  width: 50%;
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 40px;
-}
-
-.hobbies div {
-  margin-left: 20px;
-}
-
-.hobbies p {
-  color: grey;
-}
-
-p {
-  line-height: 1.5;
+.work-experience-title,
+.education-title,
+.courses-and-certificates-title {
+  margin: 0;
+  margin-top: -30px;
 }
 
 .cv-download-link {
